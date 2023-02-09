@@ -1,3 +1,7 @@
+public netlify link:
+
+https://roaring-donut-378fd9.netlify.app/
+
 #notes from project
 
 Brief:
