@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px #ccc;
+  color: #253b56;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.content {
+  padding: 4px 16px 20px 16px;
+  font-size: 14px;
+}
+
+.image {
+  background-color: lightGray;
+  border-radius: 8px 8px 0 0;
+  max-height: 140px;
+  overflow: hidden;
+}
+
+.title {
+  font-family: Avenir-Heavy;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 12px 0px 0px 0px;
+}
+
+p {
+  font-size: 10;
+  margin: 8px 0 0 0;
+}
