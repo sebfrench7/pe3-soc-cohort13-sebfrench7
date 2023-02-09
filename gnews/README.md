@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+#notes from project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Brief:
+Create a website that gets news from the GNews api:
 
-## Available Scripts
+Your website must:
 
-In the project directory, you can run:
+1. Include a search area
+2. Include a results area
+3. Include tests
+4. Be hosted on a publicly accessible URL, so we can see it working
 
-### `npm start`
+I have successfully created an MVP of the required brief which includes:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- a search bar that takes a search term and returns the top 10 results from the GNews API
+- a results area that displays the results from the search
+- a test suite that tests the search bar and results area
+- a hosted version of the website on Netlify
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Approach:
 
-### `npm test`
+Though Typescript is a language I am familiar with, I have chosen to use Javascript for this project as I am more familiar with it and it is the language I am most comfortable with. I am currently learning Typescript and I would like to use it in future projects and my learning plan should enable me to be compitent with it by the end of february. I have used CSS to style the website and the Jest testing library to test the website.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I started by creating a new React app using the create-react-app boilerplate. I then created a news headline section with the top stories followed by a search bar complete with results. I then created a sard component that was passed mapped props and displayed data depending on the content to ensure reusability.
 
-### `npm run build`
+I wanted to keep the design simple to focus on the functionality of the website to enable me to complete the MVP in the time given and enable me to use the Agile methodology to bring this MVP to the product owner for feedback to ensure any desired design choices could be made by the customer, therefore reducing any tech debt and allowing a more efficient workflow.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+issues:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-limited api calls made it difficult to test the website, therefore i created a dummy json file to test the website before using my api key
+-During my deployment i changed access of the account from Percayso to my personal account to enable me to deploy to netlify. This was due to lack of knowlege when deploying on netlify and in hindsight i should have asked for clairification on how to deploy from the Percayso account.
+-due to personal circumstances i was unable to spend as much time on this project as i would have liked to, therefore i was unable to complete the extra credit section of the brief yet I am confident that given more time, i would be able to complete this section and add further functionality to the website.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+future improvements:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- complete typescript training
+- add more tests to the test suite
+- add more functionality to the website
+- add a loading screen to the website

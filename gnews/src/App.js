@@ -4,10 +4,15 @@ import { searchNews } from "./api";
 import { useState, useEffect } from "react";
 import "./App.css";
 
+//please see readme for my workings and notes
+
 function App() {
+  // state for headlines
   const [data, setData] = useState([]);
+  // state for search results
   const [searchData, setSearchData] = useState([]);
 
+  // get headlines on page load
   useEffect(() => {
     getHeadlines().then((data) => {
       setData(data.articles);
@@ -16,6 +21,7 @@ function App() {
 
   console.log(data.map((article) => article.title));
 
+  // search for news
   const search = (e) => {
     e.preventDefault();
     const searchTerm = e.target[0].value;
@@ -28,6 +34,7 @@ function App() {
     <div className="App">
       <h1>Top News</h1>
       <div className="headline-container">
+        {/* map through headlines and display them */}
         {data.map((article) => (
           <Card
             title={article.title}
